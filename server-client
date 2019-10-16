@@ -1,1 +1,53 @@
+package client;
 
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.Socket;
+
+/**
+ *
+ * @author HP
+ */
+public class client {
+    public static void main(String[] args){
+        Socket serverSocket;
+        DataOutputStream dataOutputStream;
+        try{
+            serverSocket=new Socket("localhost",49917);
+            dataOutputStream=new DataOutputStream(serverSocket.getOutputStream());
+            dataOutputStream.writeUTF("merhaba");
+            serverSocket.close();
+        }catch(IOException ex){
+            System.out.println(ex);
+        }
+        
+        
+    }
+}
+
+import java.io.DataInputStream;
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+
+public class server {
+    public static void main(String[] args){
+        ServerSocket serverSocket;
+        Socket clientSocket;
+        DataInputStream dataInputStream;
+        String mesaj;
+        try{
+        serverSocket =new ServerSocket(49917);
+        clientSocket=serverSocket.accept();
+        dataInputStream=new DataInputStream(clientSocket.getInputStream());
+        mesaj=dataInputStream.readUTF();
+            System.out.println("alınan mesaj :"+mesaj);
+            serverSocket.close();
+        
+    }catch(IOException ex){
+            System.out.println(ex);
+    }
+        
+    }
+}
