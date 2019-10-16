@@ -25,6 +25,11 @@ public class client {
     }
 }
 
+
+
+
+package server;
+
 import java.io.DataInputStream;
 import java.io.IOException;
 import java.net.ServerSocket;
