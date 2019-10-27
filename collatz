@@ -1,0 +1,43 @@
+#include<stdio.h>
+#include<unistd.h>
+
+int main(){
+  int pid;
+  int sayi;
+  
+  printf("sayi giriniz \n");
+  scanf("%d",&sayi);
+  
+  if(sayi<0){
+  scanf("%d",&sayi);
+  }
+  
+  pid=fork();
+  if(pid<0){
+  
+  printf("child process oluşulmadı");
+  exit(-1);
+  }
+  
+  else if(pid==0){
+  do{
+     if(sayi%2!=0){
+     sayi=(sayi*3)+1;
+     }
+     else if(sayi%2==0){
+     sayi=sayi/2;
+    
+  }
+  printf("%d \n",sayi);
+}
+}
+else{
+printf("pid %d \n",pid);
+
+printf("child bitene kadar bekle");
+wait(&status);
+}
+
+
+return 0;
+}
