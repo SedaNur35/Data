@@ -13,7 +13,7 @@ public class client {
         Socket serverSocket;
         DataOutputStream dataOutputStream;
         try{
-            serverSocket=new Socket("localhost",49917);
+            serverSocket=new Socket("10.60.16.126",49917);
             dataOutputStream=new DataOutputStream(serverSocket.getOutputStream());
             dataOutputStream.writeUTF("merhaba");
             serverSocket.close();
