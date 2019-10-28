@@ -9,7 +9,7 @@ int main(){
   scanf("%d",&sayi);
   
   if(sayi<0){
-  printf("Liütfen pozitif sayı girini");
+  printf("Lütfen pozitif sayı giriniz");
   scanf("%d",&sayi);
   }
   
