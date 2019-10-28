@@ -9,13 +9,14 @@ int main(){
   scanf("%d",&sayi);
   
   if(sayi<0){
+  printf("Liütfen pozitif sayı girini");
   scanf("%d",&sayi);
   }
   
   pid=fork();
   if(pid<0){
   
-  printf("child process oluşulmadı");
+  printf("child process başarısız");
   exit(-1);
   }
   
