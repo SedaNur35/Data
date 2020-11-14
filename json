@@ -1,0 +1,29 @@
+[
+    {
+        "question" : "Osmanlı'nın ilk Padişahı Kimdir ?",
+        "correct_answer":"Osman",
+        "incorrect1":"Orhan",
+        "incorrect2":"Murad",
+        "incorrect3":"Fatih Sultan Mehmet"
+    },
+    {
+        "question" : "'Gıpgıcır' ne anlama gelir ?",
+        "correct_answer":"yepyeni",
+        "incorrect1":"Tozpembe",
+        "incorrect2":"Sapsarı",
+        "incorrect3":"Çok Eski"
+    },
+    {
+        "question" : " Günümüzde özellikle Kur’an-ı Kerim okurken kullanılan küçük masaya ne ad verilir ? ",
+        "correct_answer":"Rahle",
+        "incorrect1":"Minber",
+        "incorrect2":"Kandil",
+        "incorrect3":"Mihrap"
+    },
+    {
+        "question" : " “Alçak Gönüllü” anlamına gelen kelimenin doğru yazılışı nasıldır ? ",
+        "correct_answer":"Mütevazı",
+        "incorrect1":"Mütavazı",
+        "incorrect2":"Mütevazi",
+        "incorrect3":"Mütavazi"
+    },
